@@ -1,0 +1,42 @@
+
+body{
+   background-image: url(atl.jpg);
+   background-position: center;
+
+   /* if the image is small, it might repeat itself on the screen, this gets rid of it */
+   background-repeat: no-repeat;
+
+   /* this will set the background image to cover the entire screen and will expand or shrink when the screen does that */
+   background-size: cover;
+
+   /* if we have a scroll bar, this will make the image stay in place */
+   background-attachment: fixed;
+   margin: 0;
+}
+
+#clock-container{
+   display: flex;
+   /* horizontally aligned */
+   justify-content: center; 
+
+   /* vertically aligned */
+   align-items: center;
+
+   height: 100vh;
+}
+
+#clock{
+   font-family: monospace;
+   font-size: 6.5rem;
+   font-weight: bold;
+   text-align: center;
+   color: white;
+   
+   /* make backgroung blur */
+   backdrop-filter: blur(5px);
+
+   background-color: hsla(0, 0%, 100%,0.1);
+
+   /* make the div of the clock take up the whole web page horizontally */
+   width: 100%;
+}
